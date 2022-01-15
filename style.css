@@ -15,9 +15,7 @@ body{
     background-color: white;
 }
 
-header{
 
-}
 
 nav{
     display: flex;
@@ -62,7 +60,9 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    transition: all 05s ease;
 }
+
 .banner-left h1{
     font-weight: bold;
     font-size: 52px;
@@ -107,7 +107,11 @@ nav{
     background-image: url('images/Circle design.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    transition: all 05s ease;
+}
+.banner-right:hover{
+    transform:rotate(5deg);
+
 }
 .banner-right {
     display: inline-block;
@@ -130,11 +134,12 @@ nav{
   
 }
 .section-title h2{
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 800;
+    font-size: 27px;
     line-height: 70px;
     color: #3A3A3A;
     width: 262px;
+
     height: 70px;
    display: inline-block;
    margin:50px 0px 30px 0px;
@@ -152,7 +157,7 @@ nav{
 .product{
     margin:20px 0px;
     border-radius: 15px;
-    padding:30px;
+    padding:20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,16 +168,24 @@ nav{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.445);
     transform: scale(1.02);
 }
+.product img{
+    width:100%;
+}
 .product-info img{
     width:100%;
     border-radius: 10px;
 }
-
-.product .product-info h3{
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.product-info h3{
     font-weight: 500;
     padding-top:10px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
     color: #18191F;
 
@@ -182,7 +195,7 @@ nav{
 .product-info h4{
     font-weight: normal;
     padding:10px 0;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.87);
 }
@@ -196,7 +209,7 @@ nav{
 }
 
 .product-dec{font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 143%;
     color:#787885;
 
@@ -222,9 +235,7 @@ p.style-button {
 /* start services */
 
 
-.services{
 
-}
 .services-header{
     color:#8D3DAF;
     text-transform: capitalize;
@@ -255,7 +266,7 @@ p.style-button {
 }
 .box:hover{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.596);
-    transform:translate(10px);
+    transform:translate(5px);
 }
 .box img{
     height: 80px;

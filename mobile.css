@@ -1,7 +1,7 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 
- @media only screen and (max-width:992px){
+ @media only screen and (max-width:950px){
     
     .product-details{
         grid-template-columns: 1fr 1fr;
@@ -15,8 +15,8 @@
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width:768px){
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width:800px){
     .banner{
         grid-template-columns: 1fr;
         height: fit-content;
@@ -42,16 +42,50 @@
 
 
 
-/* * Extra small devices (phones, 600px and down) */ 
-@media only screen and (max-width:600px){
+/* * Extra small devices (phones, 672px and down) */ 
+@media only screen and (max-width:672px){
 
     .product-details{
        grid-template-columns: 1fr;
-
+      
+            }
+            .img-section{
+                min-height: 200px;
+            }
+            .product-info{
+                padding:10px 0px;
+                margin:10px 0px;
+                
+            }
+            .product-info h3{
+                font-size: 60px;
+                margin:10px 0px;
+               
+            }
+            .product-info h3{
+                font-size: 50px;
+                font-weight: bolder;
+                margin:10px 0px;
+               
+            }
+            .product-info p{
+                font-size: 30px;
+                margin:10px 0px;
+               
 
             }
+            .icon-star{
+                font-size: 30px;
+            }
+            
+
+
             .box-container{
                 grid-template-columns:1fr;
              
             }
+
+
+
+
 } 
